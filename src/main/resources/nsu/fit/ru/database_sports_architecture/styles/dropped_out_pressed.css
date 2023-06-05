@@ -1,0 +1,3 @@
+.backgroundColor:pressed {
+    -fx-background-color: linear-gradient(to top, #ff00ff, #c71585);
+}
