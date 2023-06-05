@@ -10,8 +10,8 @@ import java.sql.Statement;
 
 public class MenuBDW {
     public static void disconnect(Statement statement, Scene scene) throws SQLException, IOException {
-        statement.close();
         MenuModel.disconnect(scene);
+        statement.close();
     }
 
     public static void club(Statement statement, Scene scene, String login) throws SQLException, IOException {
