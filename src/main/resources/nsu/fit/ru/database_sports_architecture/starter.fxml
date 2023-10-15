@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" prefHeight="448.0" prefWidth="739.0" spacing="20.0" styleClass="backgroundColor" stylesheets="@styles/gradient_orange.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nsu.fit.ru.database_sports_architecture.controllers.StarterController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox alignment="TOP_CENTER" prefHeight="54.0" prefWidth="707.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="IP:" wrappingWidth="33.336673736572266">
+            <font>
+               <Font name="Arial" size="22.0" />
+            </font>
+         </Text>
+         <TextField fx:id="ip" prefHeight="27.0" prefWidth="150.0" styleClass="backgroundColor" stylesheets="@styles/gradient_blue.css" text="84.237.50.81">
+            <HBox.margin>
+               <Insets right="20.0" />
+            </HBox.margin>
+         </TextField>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PORT:">
+            <font>
+               <Font name="Arial" size="22.0" />
+            </font>
+            <HBox.margin>
+               <Insets left="10.0" />
+            </HBox.margin>
+         </Text>
+         <TextField fx:id="port" styleClass="backgroundColor" stylesheets="@styles/gradient_blue.css" text="1521">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin>
+         </TextField>
+      </children>
+      <VBox.margin>
+         <Insets top="50.0" />
+      </VBox.margin>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </HBox>
+   <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="622.0">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Приветствуем в приложении">
+            <font>
+               <Font size="30.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </Text>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="OrangeTange" wrappingWidth="205.33203125">
+            <font>
+               <Font name="Mongolian Baiti" size="37.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </Text>
+          <Button id="menu" fx:id="start" prefHeight="42.0" prefWidth="135.0" text="Начать Работу">
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+            <stylesheets>
+               <URL value="@styles/gradient_blue.css" />
+               <URL value="@styles/button_pressed.css" />
+            </stylesheets>
+            <styleClass>
+               <String fx:value="backgroundColor" />
+               <String fx:value="backgroundColor" />
+            </styleClass>
+         </Button>
+         <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="515.0">
+            <children>
+               <HBox alignment="CENTER" prefHeight="63.0" prefWidth="510.0">
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Логин:" wrappingWidth="72.3984375">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets right="31.0" />
+                        </HBox.margin>
+                     </Text>
+                     <TextField fx:id="login" promptText="логин" styleClass="backgroundColor" stylesheets="@styles/gradient_blue.css" text="20211_Balashov">
+                        <HBox.margin>
+                           <Insets top="6.0" />
+                        </HBox.margin>
+                     </TextField>
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER" prefHeight="64.0" prefWidth="510.0">
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль:">
+                        <font>
+                           <Font size="24.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets right="31.0" />
+                        </HBox.margin>
+                     </Text>
+                     <PasswordField fx:id="pass" promptText="пароль" styleClass="backgroundColor" stylesheets="@styles/gradient_blue.css" text="MilTy_0416">
+                        <HBox.margin>
+                           <Insets top="5.0" />
+                        </HBox.margin>
+                     </PasswordField>
+                  </children>
+               </HBox>
+            </children>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+         </VBox>
+      
+                <Label fx:id="err" style="-fx-background-color: black;" textFill="#4fff00">
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+      </children>
+   </VBox>
+</VBox>
